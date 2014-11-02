@@ -3,13 +3,13 @@
 #       version: 0.10.28
 
 dependencies:
-    pre:
-        - npm install -g karma
-    cache_directories:
-        - ~/nvm
+  pre:
+    - npm install -g karma
+  cache_directories:
+    - ~/nvm
 
 deployment:
-    master:
-        branch: master
-        command:
-          - node scripts/ci-publish.js
+  master:
+    branch: master
+    command:
+      - node scripts/ci-publish.js

@@ -11,5 +11,5 @@ dependencies:
 deployment:
   master:
     branch: master
-    command:
+    commands:
       - node scripts/ci-publish.js

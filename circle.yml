@@ -7,3 +7,9 @@ dependencies:
         - npm install -g karma
     cache_directories:
         - ~/nvm
+
+deployment:
+    master:
+        branch: master
+        command:
+          - node scripts/ci-publish.js

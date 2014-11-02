@@ -39,3 +39,9 @@ In your gulpfile.js add a task to generate assets
         .pipe(ss.system.js)
         .pipe(gulp.dest('./client/static/assets/js/'));
     });
+
+Development Notes
+---
+
+call `npm link` from here while developing. Call `npm link ss-build` from the socketstream app to get the changes without updating packages.
+

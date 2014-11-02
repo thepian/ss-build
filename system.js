@@ -1,13 +1,17 @@
 'use strict';
 
 var ss = require('socketstream'),
+	_ = require('lodash'),
 	File = require('vinyl');
 
 module.exports = {
 	js: function(config) {
-		var contents = ss.client.assets.serve.js({ compress:true });
+		config = _.defaults(config, {
+			compress: true
+		});
+		var contents = ss.client.assets.serve.js({ compress:config.compress });
 		var f = {
-			path: "system.js"
+			path: "system.js",
 			contents: new Buffer(contents)
 		};
 
@@ -16,9 +20,12 @@ module.exports = {
 	},
 
 	initCode: function(config) {
-		var contents = ss.client.assets.serve.initCode({ compress:true });
+		config = _.defaults(config, {
+			compress: true
+		});
+		var contents = ss.client.assets.serve.initCode({ compress:config.compress });
 		var f = {
-			path: "system.js"
+			path: "system.js",
 			contents: new Buffer(contents)
 		};
 

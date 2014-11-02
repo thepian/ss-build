@@ -1,0 +1,11 @@
+#machine:
+#   node:
+#       version: 0.10.28
+
+dependencies:
+    pre:
+        - npm install -g karma
+    post:
+        - bower install
+    cache_directories:
+        - ~/nvm

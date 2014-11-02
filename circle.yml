@@ -5,7 +5,5 @@
 dependencies:
     pre:
         - npm install -g karma
-    post:
-        - bower install
     cache_directories:
         - ~/nvm

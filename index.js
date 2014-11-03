@@ -1,5 +1,7 @@
 'use strict';
 
-module.exports = {
-	system: require('./system')
+module.exports = function(ss) {
+	return {
+		system: require('./lib/system')(ss)
+	};
 };

@@ -31,12 +31,12 @@ Gulp usage
 #### Saving system assets
 
 In your gulpfile.js add a task to generate assets
-    var ss = require('ss-build');
+    var ss = require('ss-build')(require('socketstream'));
 
     gulp.task('assets', function() {
       require('./app');
       gulp
-        .pipe(ss.system.js)
+        .pipe(ss.system.js())
         .pipe(gulp.dest('./client/static/assets/js/'));
     });
 

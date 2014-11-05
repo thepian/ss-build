@@ -12,6 +12,7 @@
   "author": "Henrik Vendelbo <henrik@thepia.com>",
   "dependencies": {
     "lodash": "^2.4.1",
+    "through2": "^0.6.3",
     "vinyl": "^0.4.3"
   },
   "main": "index.js",

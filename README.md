@@ -50,11 +50,11 @@ In your gulpfile.js add a task to generate assets
       gulp.task('assets', function() {
 
       var ssBuild = require('ss-build')(require('socketstream')),
-          server = require('./server');
+          app = require('./app');
 
-      ssBuild.system.js(server.settings)
+      ssBuild.system.js(app.settings)
         .pipe(gulp.dest(path.join(__dirname,'site/assets/js/')));
-      ssBuild.system.initCode(server.settings)
+      ssBuild.system.initCode(app.settings)
         .pipe(gulp.dest(path.join(__dirname,'site/assets/js/')));
 
     });

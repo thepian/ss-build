@@ -5,15 +5,30 @@
   "keywords": [
     "Socketstream",
     "build",
+    "sass",
+    "gulpplugin",
     "gulp",
     "grunt"
   ],
   "repository": "https://github.com/thepian/ss-build",
   "author": "Henrik Vendelbo <henrik@thepia.com>",
   "dependencies": {
+    "es6-module-loader": "^0.12.0",
+    "gulp-util": "^3.0",
+    "jspm": "^0.10.6",
     "lodash": "^2.4.1",
+    "map-stream": "~0.1",
+    "memory-fs": "^0.1.1",
+    "node-sass": "^1.0",
+    "orchestrator": "^0.3.7",
+    "systemjs": "^0.12.0",
+    "systemjs-builder": "^0.5.3",
+    "through": "^2.3.6",
     "through2": "^0.6.3",
-    "vinyl": "^0.4.3"
+    "vinyl": "^0.4.6",
+    "vinyl-fs": "^0.3.13",
+    "vinyl-sourcemaps-apply": "~0.1.1",
+    "webpack": "^1.4.15"
   },
   "main": "index.js",
   "engines": {
@@ -28,10 +43,15 @@
     }
   ],
   "devDependencies": {
+    "tape": "~2.3",
+    "concat-stream": "~1.4",
     "chai": "^1.9.2",
     "gulp": "^3.8.9",
     "gulp-jshint": "^1.8.6",
     "mocha": "^2.0.1",
     "npm-registry-client": "^4.0.1"
+  },
+  "jshintConfig": {
+    "laxcomma": true
   }
 }

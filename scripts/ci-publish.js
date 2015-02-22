@@ -12,15 +12,15 @@ client.get(uri, params, function(error, data/*, raw, res*/) {
 		console.error(error);
 		process.exit(1);
 	}
-	var distTags = data["dist-tags"],
-		latest = data.versions[distTags.latest];
+	var distTags = data["dist-tags"];
+		//latest = data.versions[distTags.latest];
 
 	if (pkg.version !== distTags.latest) {
 		console.info("Need npm 'publish "+pkg.version+"'");
 		/*
 		client.adduser({
 			client.publish({
-				version: pkg.version		
+				version: pkg.version
 			})
 		})
 		*/

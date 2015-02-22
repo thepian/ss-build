@@ -43,13 +43,14 @@
     }
   ],
   "devDependencies": {
-    "tape": "~2.3",
-    "concat-stream": "~1.4",
     "chai": "^1.9.2",
+    "concat-stream": "~1.4",
     "gulp": "^3.8.9",
     "gulp-jshint": "^1.8.6",
     "mocha": "^2.0.1",
-    "npm-registry-client": "^4.0.1"
+    "npm-registry-client": "^4.0.1",
+    "socketstream": "^0.3.11",
+    "tape": "~2.3"
   },
   "jshintConfig": {
     "laxcomma": true

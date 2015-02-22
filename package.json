@@ -28,6 +28,7 @@
     "vinyl": "^0.4.6",
     "vinyl-fs": "^0.3.13",
     "vinyl-sourcemaps-apply": "~0.1.1",
+    "watchpack": "^0.2.3",
     "webpack": "^1.4.15"
   },
   "main": "index.js",

@@ -13,6 +13,7 @@
   "repository": "https://github.com/thepian/ss-build",
   "author": "Henrik Vendelbo <henrik@thepia.com>",
   "dependencies": {
+    "browserify": "^9.0.8",
     "es6-module-loader": "^0.12.0",
     "gulp-util": "^3.0",
     "jspm": "^0.10.6",

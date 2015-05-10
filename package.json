@@ -1,6 +1,6 @@
 {
   "name": "ss-build",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Building Socketstream assets without running the server",
   "keywords": [
     "Socketstream",
